@@ -17,7 +17,14 @@ spec:
       containers:
       - image: michaelsamirjacob/reverseproxy:v1
         name: reverseproxy
-        imagePullPolicy: Always          
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "0.2"
+          limits:
+            memory: "2048Mi"
+            cpu: "2"          
         resources:
           requests:
             memory: "64Mi"

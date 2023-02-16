@@ -18,6 +18,13 @@ spec:
       - image: michaelsamirjacob/udagram-api-feed:v1
         name: udagram-api-feed
         imagePullPolicy: Always  
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "0.2"
+          limits:
+            memory: "2048Mi"
+            cpu: "2"
         envFrom:
         - configMapRef:
             name: env-configmap   

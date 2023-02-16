@@ -18,7 +18,14 @@ spec:
       containers:
       - image: michaelsamirjacob/udagram-frontend:v1
         name: udagram-frontend
-        imagePullPolicy: Always          
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "0.2"
+          limits:
+            memory: "2048Mi"
+            cpu: "2"         
         ports:
         - containerPort: 80
         resources:
