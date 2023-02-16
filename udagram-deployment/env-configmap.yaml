@@ -4,9 +4,9 @@ metadata:
   name: env-configmap
 data:
   # property-like keys; each key maps to a simple value
-  POSTGRES_HOST: "udagramdb.cmnhtqva4qlj.us-east-1.rds.amazonaws.com"
+  POSTGRES_HOST: "udagramdb.cyrfbn1ec6kh.us-east-1.rds.amazonaws.com"
   POSTGRES_DB: "postgres"
-  AWS_BUCKET: "udagrambucket-3355-1329-9841"
+  AWS_BUCKET: "udagrambucket-1610-1466-8432"
   AWS_REGION: "us-east-1"
   AWS_PROFILE: "default"
   JWT_SECRET: "testing"
